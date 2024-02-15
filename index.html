@@ -76,6 +76,14 @@
               $("section#title img[src='img/title"+n+".jpg']").attr("src","img/mobile_title"+n+".jpg");
               n++;
           });
+
+          $("#footer .btnA").click(function(){
+            
+            $(this).parent().siblings().wrapAll("<div class=btnA_pop></div>");
+            $(this).slideToggle();
+            return false;
+
+          });
           
 
         }
@@ -462,6 +470,7 @@
     <div class="footerTop">
       <p class="colorP">Join Us And Be The First To know About Promotions, Exclusive Offers, And More.</p>
       <h4>SIGN UP FOR UPDATES</h4>
+      <h4 class="hide colorP">Sign Up For Updates & Get Discount</h4>
       <div class="mail">
         <input type="email" placeholder=" Your email address  ">
         <button>SUBSCRIBE</button>
@@ -475,24 +484,24 @@
     <div class="footerMiddle">
       <ul class="grid">
         <li>
-          <ul>
-            <li><a href="" class="textBold">ABOUT ETUDE</a></li>
+          <ul class="footA">
+            <li class="footB"><a href="" class="textBold btnA">ABOUT ETUDE</a></li>
             <li><a href="" class="textLight">About Etude</a></li>
             <li><a href="" class="textLight">Membership</a></li>
             <li><a href="" class="textLight">Shipping Guide</a></li>
           </ul>
         </li>
         <li>
-          <ul>
-            <li><a href="" class="textBold">MY ETUDE</a></li>
+          <ul class="footA">
+            <li><a href="" class="textBold btnB">MY ETUDE</a></li>
             <li><a href="" class="textLight">My Account</a></li>
             <li><a href="" class="textLight">Track Order</a></li>
             <li><a href="" class="textLight">Cookie settings</a></li>
           </ul>
         </li>
         <li>
-          <ul>
-            <li><a href="" class="textBold">HELP</a></li>
+          <ul class="footA">
+            <li><a href="" class="textBold btnC">HELP</a></li>
             <li><a href="" class="textLight">FAQs</a></li>
             <li><a href="" class="textLight">Wholesale Inquiry</a></li>
             <li><a href="" class="textLight">Affiliate Program</a></li>
