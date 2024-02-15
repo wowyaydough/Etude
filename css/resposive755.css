@@ -210,7 +210,9 @@
   padding-top: 30px;
   height: 30vh;
   }
-  
+  #footer.slidingH{
+   height:40vh;
+  }
   section#footer.slidingDown{
     height: 40vh;
     transition: 1s;
@@ -258,21 +260,39 @@
   .footerMiddle ul.footA li.footB{
    border-top: 0.5px solid #dddddd;
   }
+ul.grid li:nth-child(2) ul li{
+  border:none !important;
+}
 .footerMiddle ul.footA .btnA_pop{
   background-color: #f7f7f7; 
-
+  display: none;
+}
+.footerMiddle ul.footA .btnB_pop{
+  background-color: #f7f7f7; 
+  display: none;
+}
+.footerMiddle ul.footA .btnC_pop{
+  background-color: #f7f7f7; 
+  display: none;
 }
 
+.btnA_pop li{
+  border:none !important;
+}
+.btnB_pop li{
+  border:none !important;
+}
+.btnC_pop li{
+  border:none !important;
+}
   section#footer .wrap .footerMiddle::after{
     display: none;
   }
-  section#footer ul.footA li:not(:first-child){
-  display: none;  
-  }
+
   
   section#footer ul.footA li a{
   font-weight: normal;
-  color: #111;
+  color: #555555;
   font-size: 15px;
   line-height: 2.5;
   margin-left: 18px;
@@ -281,8 +301,10 @@
   align-items: center;
   margin-right: 5px;
   }
-
-.btnA_pop li{
+li.footB a{
+  color:#111 !important;
+}
+.btnA_pop.btnShow{
 display: initial !important;
 }
 section#footer ul.footA li:not(:first-child){
@@ -296,8 +318,14 @@ section#footer ul.footA li:not(:first-child){
     width: 24px;
     height: 24px;
   }
-section#footer ul.footA li:not(:first-child) a::after{
- display: none;  
+section#footer .btnA_pop li a::after{
+ display: none !important;;  
+}
+section#footer .btnB_pop li a::after{
+ display: none !important;;  
+}
+section#footer .btnC_pop li a::after{
+ display: none !important;;  
 }
   section#footer .wrap .footerBottom > ul{
     display: none;
