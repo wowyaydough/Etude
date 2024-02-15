@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPF8_ETUDE</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <!-- //구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- 구글폰트// -->
+    <!-- 프리텐다드 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!--  -->
+    <!-- https://ionic.io/ionicons/v1 -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/best.css">
+    <link rel="stylesheet" href="css/sns.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/resposive755.css">
+     <!-- java -->
+     <script src="JS/jquery-3.7.1.min.js"></script>
+
+
+      <!-- slick -->
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <script type="text/javascript">
+      $(document).ready(
+          function(){
+              $('.titleT').slick({
+                  infinite: true,
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  autoplay: true,
+                  autoplaySpeed: 3000,
+                  speed:4000,
+                  dots:true,
+                  arrows:true,
+                  responsive: [
+                {
+                    breakpoint: 756,
+                    settings: {
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1000,
+                        speed:1000,
+                        dots:true,
+                        arrows:false
+                    }}
+                  ]
+          }); 
+              });
+     </script>
+  
+     <script type="text/javascript">
+      $(document).ready(function(){
+
+        // 윈도우 사이즈가 755이하일때
+        if($(window).width()<=770){
+
+          var n=1;
+          $("section#title img").each(function(){
+              $("section#title img[src='img/title"+n+".jpg']").attr("src","img/mobile_title"+n+".jpg");
+              n++;
+          });
+          
+
+        }
+
+        $(window).resize(function(){
+          var n=1;
+          if($(window).width()>770){
+            $("section#title img").each(function(){
+                $("section#title img:nth-child("+n+")").attr("src","img/title"+n+".jpg");
+                n++;
+             });
+          }
+          if($(window).width()<=770){
+            var n=1;
+            $("section#title img").each(function(){
+                $("section#title img:nth-child("+n+")").attr("src","img/mobile_title"+n+".jpg");
+                n++;
+             });
+          }
+
+        });
+      });
+      </script>
+
+<!-- 햄버거 -->
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    $(".ham").click(function(){
+      $("section#header ul.gnb").toggleClass("gnbShow");
+      return false;
+    });
+  });
+
+</script>
+</head>
+<body>
+        <section id="header">
+          <div class="wrap flex between">
+            <a href="" class="logo font0">ETUDE</a>
+            <ul class="gnb flex">
+              <li><a href="" class="font15">SHOP</a></li>
+              <li><a href="" class="font15">COLLECTIONS</a></li>
+              <li><a href="" class="font15">NEW</a></li>
+              <li><a href="" class="font15">BEST</a></li>
+              <li><a href="" class="font15">EVENT</a></li>
+              <li><a href="" class="font15">BEAUTY OFFERS</a></li>
+              <li><a href="" class="font15">REVIEWS</a></li>
+              <li><a href="" class="font15">HOT DEALS</a></li>
+            </ul>
+            <div class="right">
+                <ul class="top log flex">
+                  <li><a href="" class="font13">Login</a></li>
+                  <li><a href="" class="font13">Register</a></li>
+                </ul>
+                <ul class="bottom flex">
+                  <li>
+                    <input type="text">
+                  </li>
+                  <li><a href="">WISH</a></li>
+                  <li><a href="">CART</a></li>
+                </ul>  
+          </div>
+          <a href="" class="ham hide">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </section>
+    <!-- title -->
+    <main>
+<section id="title" class="vh100">
+    <div class="wrap titleT">
+      <img src="img/title1.jpg" alt="">
+      <img src="img/title5.jpg" alt="">
+      <img src="img/title2.jpg" alt="">
+      <img src="img/title3.jpg" alt="">
+      <img src="img/title4.jpg" alt="">
+    </div>
+        <h2></h2>
+        <p></p>
+
+</section>
+
+<!-- product -->
+<section id="product" class="vh100">
+  <div class="wrap">
+    <h2>Hot Deal</h2>
+    <ul class="flex">
+      <li> 
+        <a href="" class="img"></a>
+        <div>
+          <a href="">
+            <h3>Pang Pang Hair Shadow</h3>
+          </a> 
+          <span class="flex">
+              <p class="detailA">As low as</p>
+              <p class="detailB">US $9.60</p>
+              <p class="detailC">US $12.40</p>            
+          </span>      
+          <a class="addC">ADD TO CART</a>
+        </div>  
+      </li>
+      <li>  
+        <a href="" class="img"></a>
+          <div>
+              <a href="">
+                <h3>Two Tone Treatment Hair Color</h3>
+              </a> 
+              <span class="flex">
+                <p class="detailA">As low as</p>
+                <p class="detailB">US $7.20</p>
+                <p class="detailC">US $4.40</p>            
+            </span>  
+              <a class="addC">ADD TO CART</a>
+          </div>
+      </li>
+      <li>
+        <a href="" class="img"></a>
+        <div>
+          <a href="">
+            <h3>[SET]Petit Bijou Bodycare Duo</h3>
+          </a> 
+          <span class="flex">
+            <p class="detailA">As low as</p>
+            <p class="detailB">US $12.90</p>
+            <p class="detailC">US $28.80</p>            
+        </span>      
+          <a class="addC">ADD TO CART</a>
+        </div>  
+      </li>
+      <li>
+        <a href="" class="img"></a>
+        <div>
+          <a href="">
+            <h3>Petit Bijou Cotton Snow Soft Body<span class=block></span>Wash 300ml</h3>
+          </a> 
+          <span class="flex">
+            <p class="detailA">As low as</p>
+            <p class="detailB">US $7.20</p>
+            <p class="detailC">US $14.40</p>            
+        </span>  
+          <a class="addC">ADD TO CART</a>
+        </div>     
+      </li>
+      <li>
+        <a href="" class="img"></a>
+        <div>
+          <a href="">
+            <h3>Play Color Eyes</h3>
+          </a> 
+          <span class="flex">
+            <p class="detailA">As low as</p>
+            <p class="detailB">US $14.00</p>
+            <p class="detailC">US $31.20</p>            
+        </span>      
+          <a class="addC">ADD TO CART</a>
+        </div>  
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- new -->
+<section id="new" >
+  <div class="wrap">
+    <h2 class="center">What's New</h2>
+    <a href="" class="center">View More</a>
+    <div class="second grid">
+      <a href="">img</a>
+      <ul class="top flex">
+        <li>
+          <a href=""></a>
+          <div class="tag">
+            <a href="">[SET] My Best Tone Eye Palette Special Edition</a>
+            <span class="flex">
+              <p class="detailA">As low as</p>
+              <p class="detailB">US $25.92</p>
+              <p class="detailC">US $43.20</p>            
+          </span>   
+            <a href="" class="addC">ADD TO CART</a>
+          </div>
+        </li>
+        <li>
+          <a href=""></a>
+          <div class="tag">
+            <a href="">[SET]My Best Tone Special Duo</a>
+            <span class="flex">
+              <p class="detailA">As low as</p>
+              <p class="detailB">US $35.28</p>
+              <p class="detailC">US $58.80</p>            
+          </span>  
+            <a href="" class="addC">ADD TO CART</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="bottom flex">
+        <li>
+          <a href=""></a>
+          <div class="tag">
+            <a href="">My Best Tone Eye Palette</a>
+            <span class="flex">
+              <p class="detailA">As low as</p>
+              <p class="detailB">US $25.20</p>
+              <p class="detailC">US $36.00</p>            
+          </span>   
+            <a href="" class="addC">ADD TO CART</a>
+          </div>
+        </li>
+        <li>
+          <a href=""></a>
+          <div class="tag">
+            <a href="">Glaze Plump Gloss</a>
+            <span class="flex">
+              <p class="detailA">As low as</p>
+              <p class="detailB">US $12.48</p>
+              <p class="detailC">US $15.60</p>            
+          </span> 
+            <a href="" class="addC">ADD TO CART</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- best -->
+<section id="best" class="vh100">
+  <div class="wrap">
+    <h2>Best Seller</h2>
+    <a href="" clsss="center">View More</a>
+    <ul class="flex">
+      <li>
+        <a href="">img</a>
+        <div class="tag">
+          <a href="">[SET] REplay Collection Full Set (+Free Gift)</a>
+          <span class="flex">
+            <p class="detailA">As low as</p>
+            <p class="detailB">US $103.44</p>
+            <p class="detailC">US $172.40</p>            
+        </span>      
+          <a href="" class="addC">ADD TO CART</a>
+        </div>
+      </li>
+      <li>
+        <a href="">img</a>
+        <div class="tag">
+          <a href="">Dear Darling Oil Tint</a>
+          <span class="flex">
+            <p class="detailA">As low as</p>
+            <p class="detailB">US $10.56</p>
+            <p class="detailC">US $13.20</p>            
+        </span> 
+          <a href="" class="addC">ADD TO CART</a>
+        </div>
+      </li>
+      <li>
+        <a href="">img</a>
+        <div class="tag">
+          <a href="">[SET]Moistfull Collagen Intense Full<span class="block"></span>Set 6 Items</a>
+          <span class="flex">
+            <p class="detailA">As low as</p>
+            <p class="detailB">US $106.68</p>
+            <p class="detailC">US $152.40</p>            
+        </span> 
+          <a href="" class="addC">ADD TO CART</a>
+        </div>
+      </li>
+      <li>
+        <a href="">img</a>
+        <div class="tag">
+          <a href="">SoonJung 2x Barrier Intensive Cream<span class="block"></span>60ml</a>
+          <span class="flex">
+            <p class="detailA">As low as</p>
+            <p class="detailB">US $20.40</p>            
+        </span>      
+          <a href="" class="addC">ADD TO CART</a>
+        </div>
+      </li>
+      <li>
+        <a href="">img</a>
+        <div class="tag">
+          <a href="">[SET] Fixing Tint Full Set 17 Colors</a>
+          <span class="flex">
+            <p class="detailA">As low as</p>
+            <p class="detailB">US $159.90</p>
+            <p class="detailC">US $244.80</p>            
+        </span>      
+          <a href="" class="addC">ADD TO CART</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    </main>
+
+<!-- SNS  -->
+<section id="sns">
+  <div class="wrap">
+    <h2 class="one">ETUDE Official Instagram</h2>
+ <ul class="outer flex">
+  <li>
+    <h2 class="two">ETUDE Official TikTok</h2>
+  </li>
+  <li>
+    <ul class="innerA flex">
+      <li>
+          <a href="">
+            <img src="img/sns1.jpg" alt="립글로스">
+          </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="img/sns2.jpg" alt="립틴트">
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul class="innerB">
+      <li>
+        <ul class="rightT flex">
+          <li>
+            <a href="">
+              <img src="img/sns3.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/sns4.jpg" alt="">
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="rightB flex">
+          <li>Connect With Us</li>
+          <li>
+            <a href="">
+              <img src="img/insta.svg" alt="">
+            </a>  
+          </li>
+          <li>
+            <a href="">
+              <img src="img/facebook.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/youtube.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/tiktok.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+ </ul>
+  </div>
+</section>
+
+<!-- banner -->
+<section id="banner">
+  <div class="wrap">
+    <ul class="flex">
+      <li><a href="">
+        <img src="img/banner1.jpg" alt="">
+      </a></li>
+
+      <li><a href="">
+        <img src="img/banner2.jpg" alt="">
+      </a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- footer -->
+<section id="footer">
+  <div class="wrap">
+    <div class="footerTop">
+      <p class="colorP">Join Us And Be The First To know About Promotions, Exclusive Offers, And More.</p>
+      <h4>SIGN UP FOR UPDATES</h4>
+      <div class="mail">
+        <input type="email" placeholder=" Your email address  ">
+        <button>SUBSCRIBE</button>
+      </div>
+       <div class="checkB">
+        <input type="checkbox">
+        <p>I have read and accept the <span>privacy policy</span></p>
+       </div>
+       
+    </div>
+    <div class="footerMiddle">
+      <ul class="grid">
+        <li>
+          <ul>
+            <li><a href="" class="textBold">ABOUT ETUDE</a></li>
+            <li><a href="" class="textLight">About Etude</a></li>
+            <li><a href="" class="textLight">Membership</a></li>
+            <li><a href="" class="textLight">Shipping Guide</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><a href="" class="textBold">MY ETUDE</a></li>
+            <li><a href="" class="textLight">My Account</a></li>
+            <li><a href="" class="textLight">Track Order</a></li>
+            <li><a href="" class="textLight">Cookie settings</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><a href="" class="textBold">HELP</a></li>
+            <li><a href="" class="textLight">FAQs</a></li>
+            <li><a href="" class="textLight">Wholesale Inquiry</a></li>
+            <li><a href="" class="textLight">Affiliate Program</a></li>
+            <li><a href="" class="textLight">Notice</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="footerBottom">
+      <ul class="flex">
+        <li><a href="">Terms & Conditions</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Cookies Policy</a></li>
+        <li><a href="">Cookie settings</a></li>
+      </ul>
+      <p>@ETUDE CORPORATION. ALL RIGHTS RESERVED.</p>
+    </div>
+  </div>
+</section>
+</body>
+</html>
