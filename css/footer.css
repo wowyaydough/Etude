@@ -11,15 +11,18 @@ section#footer .wrap .footerTop{
   
 }
 section#footer .wrap .footerTop p.colorP{
-color:#ef426f;
 font-size: 18px;
 text-align: center;
 }
-section#footer .wrap .footerTop h4{
+section#footer h4{
   font-size: 30px;
   text-align: center;
   line-height: 2;
   font-weight: bold;
+}
+
+section#footer h4.hide{
+  display: none;
 }
 section#footer .wrap .footerTop div.mail{
   display: grid;
@@ -92,7 +95,6 @@ section#footer .wrap .footerMiddle::after{
 }
 
 section#footer .wrap .footerBottom{
- 
   display: flex;
   flex-direction: column;
   justify-content: center;

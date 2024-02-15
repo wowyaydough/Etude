@@ -34,13 +34,7 @@ section#product .wrap ul li{
   text-align: left;
 }
 
-section#product .wrap ul li:nth-child(4){
-  display: none;
-}
-section#product .wrap ul li:nth-child(5){
-display:none;
-  
-}
+
 section#product .wrap ul li:last-child{
   padding-right: 0;
   

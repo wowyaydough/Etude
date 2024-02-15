@@ -103,6 +103,7 @@
   width: 31.2vw;
   height: 31.2vw;
   font-size: 17px;
+  margin-bottom: 15px;
   }
   section#new .wrap ul li div.tag a.addC{
   width: auto;
@@ -141,6 +142,7 @@
   }
   section#best .wrap ul li > a{
   height: 30.2vw;
+  margin-bottom: 15px;
   }
   section#best .wrap ul li div.tag > a{
     
@@ -181,18 +183,130 @@
   section#sns .wrap ul.rightB{
     
   justify-content: center;
+  margin-bottom: 44px;
   }
   section#sns .wrap ul.rightB li:not(:first-child){
   margin-right: -27px;
   }
   section#sns .wrap ul.rightB li:nth-child(1){
   position: absolute;
-  bottom: 62px;
-  right: calc((100% - 236px)/ 2);
+  bottom: 103px;
+  right: calc((100% - 206px)/ 2);
+  font-size: 26px;
   }
   
 /* banner   */
   section#banner{
-  height: 40vh;
+  height: 20vh;
   }
+  
+  section#banner ul li a img{ 
+  width: calc(100% - 10px);
+  border-radius: 7px;
+  }
+  
+/* footer   */
+  section#footer{
+  padding-top: 30px;
+  height: 30vh;
+  }
+  
+  section#footer.slidingDown{
+    height: 40vh;
+    transition: 1s;
+      
+  }
+   
+  }
+  section#footer .wrap .footerTop p.colorP{
+  display: none;
+  }
+  section#footer h4{
+  display: none;
+  }
+  
+  section#footer h4.hide{   
+  display: block;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 15px;
+  }
+  
+  section#footer .wrap .mail input{
+  width: 85vw;
+  }
+  section#footer .checkB{
+  justify-content: flex-start;
+  margin-left: 42px;
+  margin-top: -10px;
+  }
+  section#footer .wrap .footerMiddle{
+  margin: 0;
+  margin-top: 53px;
+  margin-bottom: 48px;
+  }
+  .footerMiddle ul.grid{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 97%;
+  background-color: white;
+  }
+  .footerMiddle ul.footA li{
+  border-bottom: 0.5px solid #dddddd;
+  }
+  .footerMiddle ul.footA li.footB{
+   border-top: 0.5px solid #dddddd;
+  }
+.footerMiddle ul.footA .btnA_pop{
+  background-color: #f7f7f7; 
+
+}
+
+  section#footer .wrap .footerMiddle::after{
+    display: none;
+  }
+  section#footer ul.footA li:not(:first-child){
+  display: none;  
+  }
+  
+  section#footer ul.footA li a{
+  font-weight: normal;
+  color: #111;
+  font-size: 15px;
+  line-height: 2.5;
+  margin-left: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+  }
+
+.btnA_pop li{
+display: initial !important;
+}
+section#footer ul.footA li:not(:first-child){
+  background-color: #f7f7f7;
+}
+
+  section#footer ul.footA li a::after{
+    content:"";
+    display: block;
+    background-image: url(../img/arrow_down.svg);
+    width: 24px;
+    height: 24px;
+  }
+section#footer ul.footA li:not(:first-child) a::after{
+ display: none;  
+}
+  section#footer .wrap .footerBottom > ul{
+    display: none;
+  }
+  
+  section#footer .wrap .footerBottom p::before{
+    display: none;
+  }
+  
+
+  
 }
