@@ -18,16 +18,18 @@ section#header .wrap a.logo {
   height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-top: 24px;
 }
 section#header .wrap ul.gnb {
   grid-column: 3;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 35px;
 }
 section#header .wrap ul.gnb li {
 
 }
 section#header .wrap ul.gnb li a {
-  padding-left: 60px;
   font-weight: bold;
 }
 section#header .wrap ul.gnb li:last-child a {
