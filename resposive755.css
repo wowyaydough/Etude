@@ -1,0 +1,340 @@
+@media screen and (max-width:770px){
+
+  body{
+    
+  }
+  .wrap{
+    
+  padding: 0 15px;
+  }
+  .vh100{  
+  height: 50vh;
+  min-height: 400px;
+  }
+  .detailB{
+   font-size: 16px;
+  }
+  .detailA{
+    
+  font-size: 12px;
+  }
+  .detailC{
+    
+  font-size: 12px;
+  }
+/*  header   */
+  section#header {
+    padding: 0 15px;
+    height: 80px;
+  }
+  section#header .wrap{ 
+  display: flex;
+  align-items: center;
+  height: 100%;
+  }
+  
+  section#header .wrap a.logo{
+  transform: scale(0.8);
+  }
+  section#header .wrap ul.gnb{
+    display: none;
+  }
+  
+  .gnbShow{
+    display:  flex !important;
+  }
+  section#header .wrap .right{
+    display: none;
+  }
+  
+  .ham{
+  display: flex;
+  }
+/*  title  */
+
+  section#title .wrap{
+    
+  padding: 0;
+  }
+  
+/*  product  */
+  section#product .wrap{ 
+  padding-top: 50px;
+  }
+  section#product .wrap ul li{
+  width: calc((100% - 10px)/ 3);
+  }
+  
+  section#product .wrap ul li a.img{ 
+  height: 31.2vw;
+  width: 31.2vw;
+  }
+  section#product .wrap ul li div a h3{
+    
+  font-size: 17px;
+  }
+  
+/* new   */
+  section#new{
+  height: 50vh;
+  min-height: 400px;
+  }
+  
+  section#new .wrap h2{
+  padding-top: 50px;
+  }
+  section#new .wrap div.second > a{
+    display: none;
+  }
+  section#new .wrap ul.bottom li:last-child{    
+    display: none;
+  }
+  section#new .wrap a.center{
+  top: 186px;
+  }
+  section#new .wrap div.second{
+    
+  margin-top: 0;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 140px;
+  }
+  section#new .wrap .second ul li a{
+  width: 31.2vw;
+  height: 31.2vw;
+  font-size: 17px;
+  margin-bottom: 15px;
+  }
+  section#new .wrap ul li div.tag a.addC{
+  width: auto;
+  height: auto;
+  }
+  section#new .wrap ul li{
+  width: 100%;
+  }
+  section#new .wrap ul li div.tag a.addC{
+  bottom: -55px;
+  }
+  section#new .wrap .second ul.top li:nth-child(2) span{
+  margin-top: 16px;
+  }
+  section#new .wrap ul.bottom li div span{
+  margin-top: 15px;
+  }
+/*  best  */
+  section#best .wrap{
+  margin-top: -55px;
+  }
+  section#best .wrap ul{
+    margin-top:0;
+  }
+  section#best .wrap ul li{
+  width: calc(100% / 3);
+  }
+  section#best .wrap ul li:nth-child(3){
+  padding-right:0px;
+  }
+  section#best .wrap ul li:nth-child(4){
+   display: none;
+  }
+  section#best .wrap ul li:nth-child(5){
+  display: none;    
+  }
+  section#best .wrap ul li > a{
+  height: 30.2vw;
+  margin-bottom: 15px;
+  }
+  section#best .wrap ul li div.tag > a{
+    
+  font-size: 17px;
+  }
+  section#best .wrap h2{
+  margin-bottom: 120px;
+  }
+  section#best .wrap ul li div.tag a.addC{
+  bottom: -50px;
+  }
+  
+/*   sns */
+  section#sns .wrap h2.one{
+  font-size: 25px;
+  position: absolute;
+  right: 13px;
+  bottom: 39%;
+  }
+  section#sns .wrap h2.two{
+    
+  font-size: 25px;
+  left: -87px;
+  }
+  section#sns .wrap ul.outer{
+  flex-wrap: wrap;
+  }
+  section#sns .wrap ul.outer > li:nth-child(2){
+    
+  margin-right: 0;
+  }
+  section#sns .wrap ul.outer > li:nth-child(2) ul.innerA{  
+  transform: scale(0.8);
+  }
+  section#sns .wrap ul.innerB > li:nth-child(2){
+  margin-left: 0;
+  }
+  section#sns .wrap ul.rightB{
+    
+  justify-content: center;
+  margin-bottom: 44px;
+  }
+  section#sns .wrap ul.rightB li:not(:first-child){
+  margin-right: -27px;
+  }
+  section#sns .wrap ul.rightB li:nth-child(1){
+  position: absolute;
+  bottom: 103px;
+  right: calc((100% - 206px)/ 2);
+  font-size: 26px;
+  }
+  
+/* banner   */
+  section#banner{
+  height: 20vh;
+  }
+  
+  section#banner ul li a img{ 
+  width: calc(100% - 10px);
+  border-radius: 7px;
+  }
+  
+/* footer   */
+  section#footer{
+  padding-top: 30px;
+  height: 30vh;
+  }
+  #footer.slidingH{
+   height:40vh;
+  }
+  section#footer.slidingDown{
+    height: 40vh;
+    transition: 1s;
+      
+  }
+   
+  }
+  section#footer .wrap .footerTop p.colorP{
+  display: none;
+  }
+  section#footer h4{
+  display: none;
+  }
+  
+  section#footer h4.hide{   
+  display: block;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 15px;
+  }
+  
+  section#footer .wrap .mail input{
+  width: 85vw;
+  }
+  section#footer .checkB{
+  justify-content: flex-start;
+  margin-left: 42px;
+  margin-top: -10px;
+  }
+  section#footer .wrap .footerMiddle{
+  margin: 0;
+  margin-top: 53px;
+  margin-bottom: 48px;
+  }
+  .footerMiddle ul.grid{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 97%;
+  background-color: white;
+  }
+  .footerMiddle ul.footA li{
+  border-bottom: 0.5px solid #dddddd;
+  }
+  .footerMiddle ul.footA li.footB{
+   border-top: 0.5px solid #dddddd;
+  }
+ul.grid li:nth-child(2) ul li{
+  border:none !important;
+}
+.footerMiddle ul.footA .btnA_pop{
+  background-color: #f7f7f7; 
+  display: none;
+}
+.footerMiddle ul.footA .btnB_pop{
+  background-color: #f7f7f7; 
+  display: none;
+}
+.footerMiddle ul.footA .btnC_pop{
+  background-color: #f7f7f7; 
+  display: none;
+}
+
+.btnA_pop li{
+  border:none !important;
+}
+.btnB_pop li{
+  border:none !important;
+}
+.btnC_pop li{
+  border:none !important;
+}
+  section#footer .wrap .footerMiddle::after{
+    display: none;
+  }
+
+  
+  section#footer ul.footA li a{
+  font-weight: normal;
+  color: #555555;
+  font-size: 15px;
+  line-height: 2.5;
+  margin-left: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+  }
+li.footB a{
+  color:#111 !important;
+}
+.btnA_pop.btnShow{
+display: initial !important;
+}
+section#footer ul.footA li:not(:first-child){
+  background-color: #f7f7f7;
+}
+
+  section#footer ul.footA li a::after{
+    content:"";
+    display: block;
+    background-image: url(../img/arrow_down.svg);
+    width: 24px;
+    height: 24px;
+  }
+section#footer .btnA_pop li a::after{
+ display: none !important;;  
+}
+section#footer .btnB_pop li a::after{
+ display: none !important;;  
+}
+section#footer .btnC_pop li a::after{
+ display: none !important;;  
+}
+  section#footer .wrap .footerBottom > ul{
+    display: none;
+  }
+  
+  section#footer .wrap .footerBottom p::before{
+    display: none;
+  }
+  
+
+  
+}
